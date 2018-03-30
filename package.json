@@ -36,6 +36,8 @@
     "lodash": "^4.17.5"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   }
 }
