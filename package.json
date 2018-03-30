@@ -16,7 +16,7 @@
     "webpack"
   ],
   "author": "Aleksei Zhigzhitov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/amaleksei/html-webpack/issues"
   },
