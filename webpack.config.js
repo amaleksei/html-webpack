@@ -1,12 +1,8 @@
+const webpack = require('webpack');
 const path = require('path');
 
-const env = process.env.NODE_ENV;
-
-const config = {
-  mode: env || 'development',
-};
-
 module.exports = {
+  mode: 'development',
   entry: './src/javascripts/index.js',
   output: {
     filename: 'bundle.js',
@@ -26,4 +22,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+
+  ],
 };
