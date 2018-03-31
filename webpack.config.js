@@ -3,9 +3,12 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  entry: './src/javascripts/index.js',
+  entry: {
+    app: './src/javascripts/index.js',
+    scss: './src/scss/main.scss',
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -19,6 +22,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
