@@ -37,6 +37,7 @@ module.exports = {
           /* inline if smaller than 10 KB, otherwise load as a file */
           loader: 'url-loader',
           options: {
+            outputPath: './assets/images',
             limit: 10000,
           },
         }],
