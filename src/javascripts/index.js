@@ -4,7 +4,7 @@ if (module.hot) {
   module.hot.accept();
 }
 
-export const component = () => {
+const component = () => {
   const element = document.createElement('div');
 
   element.innerHTML = _.join(['Hello', 'webpack!'], ' ');
@@ -13,7 +13,7 @@ export const component = () => {
   return element;
 };
 
-export const desctiption = () => {
+const desctiption = () => {
   const element = document.createElement('div');
 
   element.innerHTML = _.join(['Boilerplate', 'for a Webpack and HTML'], ' ');
@@ -22,8 +22,17 @@ export const desctiption = () => {
   return element;
 };
 
-export default component;
+const image = () => {
+  const imageInsert = document.createElement('div');
+  imageInsert.innerHTML = _.join([''], ' ');
+  imageInsert.classList.add('image-insert');
+
+  return imageInsert;
+};
+
 
 document.body.appendChild(component());
 
 document.body.appendChild(desctiption());
+
+document.body.appendChild(image());

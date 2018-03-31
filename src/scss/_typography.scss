@@ -1,3 +1,18 @@
+// Font Family
+@font-face {
+  font-family: 'IBMPlexSans-Regular';
+  src: url("../assets/fonts/IBMPlexSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'IBMPlexSans-Bold';
+  src: url("../assets/fonts/IBMPlexSans-Bold.ttf");
+}
+
+
+$font-regular: IBMPlexSans-Regular;
+$font-bold: IBMPlexSans-Bold;
+
 // Font Sizes
 $h1-font-size: 50px;
 $h2-font-size: 37px;

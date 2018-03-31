@@ -9,16 +9,28 @@ body {
   width: $width;
   height: $height;
   background: $body-bg-color;
+  font-family: $font-regular;
 }
 
 .hello {
-  margin-top: 50vh;
+  margin-top: 20vh;
   text-align: center;
   color: $h1-font-color;
   font-size: $h1-font-size;
+  font-family: $font-bold;
 }
 
 .description {
+  margin-top: 2px;
   color: $p-font-color;
   text-align: center;
+}
+
+.image-insert {
+  margin: 20px auto;
+  opacity: 0.6;
+  display: block;
+  width: 400px;
+  height: 300px;
+  background: url("../assets/images/Code GIF-downsized_large.gif");
 }
