@@ -1,38 +1,23 @@
-import _ from 'lodash';
+// import _ from 'lodash';
+// import * as url from '../assets/images/test-image.gif';
 
 if (module.hot) {
   module.hot.accept();
 }
 
-const component = () => {
-  const element = document.createElement('div');
 
-  element.innerHTML = _.join(['Hello', 'webpack!'], ' ');
-  element.classList.add('hello');
+// const imageComponent = () => {
+//   const imageInsert = document.createElement('IMG');
+//   imageInsert.src = url.default;
+//   imageInsert.setAttribute('width', '400px');
+//   imageInsert.setAttribute('height', '300px');
+//   imageInsert.classList.add('image-insert');
+//   return imageInsert;
+// };
 
-  return element;
-};
+//
+// document.body.appendChild(component());
+//
+// document.body.appendChild(desctiption());
 
-const desctiption = () => {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Boilerplate', 'for a Webpack and HTML'], ' ');
-  element.classList.add('description');
-
-  return element;
-};
-
-const image = () => {
-  const imageInsert = document.createElement('div');
-  imageInsert.innerHTML = _.join([''], ' ');
-  imageInsert.classList.add('image-insert');
-
-  return imageInsert;
-};
-
-
-document.body.appendChild(component());
-
-document.body.appendChild(desctiption());
-
-document.body.appendChild(image());
+// document.body.appendChild(imageComponent());
