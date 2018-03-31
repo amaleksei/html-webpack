@@ -1,21 +1,24 @@
-//@import "~bootstrap/scss/bootstrap";
 @import "_variable";
 @import "_typography";
 
 body {
   margin: 0;
   padding: 0;
-  font-size: $font-size;
-  color: $font-color;
+  font-size: $p-font-size;
+  color: $p-font-color;
   width: $width;
   height: $height;
   background: $body-bg-color;
 }
 
 .hello {
-  //position: absolute;
-  margin-top: 20px;
+  margin-top: 50vh;
   text-align: center;
-  color: #000;
-  font-size: 55px;
+  color: $h1-font-color;
+  font-size: $h1-font-size;
+}
+
+.description {
+  color: $p-font-color;
+  text-align: center;
 }
