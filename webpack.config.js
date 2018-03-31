@@ -7,12 +7,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  entry: {
-    app: path.join(__dirname, 'src', 'javascripts', 'index.js'),
-    scss: path.join(__dirname, 'src', 'scss', 'main.scss'),
-  },
+  entry: [
+    './src/javascripts/index.js',
+    './src/scss/main.scss',
+  ],
   output: {
-    filename: '[name].bundle.js',
+    filename: './javascripts/bundle.js',
     path: path.join(__dirname, 'dist'),
   },
   module: {
@@ -42,8 +42,12 @@ module.exports = {
         }],
       },
       {
-        test: /\.(eot|svg|ico|ttf|woff2?|otf)$/,
-        use: 'file-loader',
+        test: /\.(eot|ttf|woff2?|otf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: './assets/fonts'
+        },
       },
     ],
   },
