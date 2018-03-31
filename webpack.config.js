@@ -43,6 +43,13 @@ module.exports = {
         }],
       },
       {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: './assets/images',
+        },
+      },
+      {
         test: /\.(eot|ttf|woff2?|otf)$/,
         loader: 'file-loader',
         options: {
