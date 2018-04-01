@@ -4,8 +4,8 @@
   "description": "Boilerplate for a Webpack and HTML",
   "private": true,
   "scripts": {
-    "start": "webpack & webpack-dev-server --open",
-    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "webpack": "webpack",
     "eslint": "eslint",
     "watch": "webpack --watch"
   },
@@ -32,6 +32,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.10.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
