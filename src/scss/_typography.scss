@@ -1,17 +1,10 @@
 // Font Family
-@font-face {
-  font-family: 'IBMPlexSans-Regular';
-  src: url("../assets/fonts/IBMPlexSans-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 
-@font-face {
-  font-family: 'IBMPlexSans-Bold';
-  src: url("../assets/fonts/IBMPlexSans-Bold.ttf");
-}
+$font-family: 'IBM Plex Sans', sans-serif;
 
-
-$font-regular: IBMPlexSans-Regular;
-$font-bold: IBMPlexSans-Bold;
+$font-regular: 400;
+$font-bold: 700;
 
 // Font Sizes
 $h1-font-size: 50px;

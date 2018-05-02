@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   entry: [
-    './src/javascripts/index.js',
+    './src/javascripts/index.jsx',
     './src/scss/main.scss',
   ],
   output: {
@@ -75,7 +75,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
-          outputPath: './assets/fonts',
+          outputPath: './fonts',
         },
       },
     ],

@@ -1,16 +1,25 @@
-
 @import "_variable";
 @import "_typography";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font-family: $font-family;
+  font-weight: $font-regular;
   font-size: $p-font-size;
   color: $p-font-color;
   width: $width;
   height: $height;
   background: $body-bg-color;
-  font-family: $font-regular;
+  display: flex;
+  justify-content: center;
 }
 
 .hello {
@@ -18,7 +27,7 @@ body {
   text-align: center;
   color: $h1-font-color;
   font-size: $h1-font-size;
-  font-family: $font-bold;
+  font-weight: $font-bold;
 }
 
 .description {
