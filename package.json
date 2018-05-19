@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "webpack": "webpack",
-    "eslint": "eslint",
+    "eslint": "eslint . --ext .js --ext .jsx --ext .json --ext md .",
     "watch": "webpack --watch"
   },
   "repository": {
