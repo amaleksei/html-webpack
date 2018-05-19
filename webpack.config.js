@@ -48,28 +48,6 @@ module.exports = {
           ],
         }),
       },
-      // {
-      //   test: /\.(jpe?g|png|gif)$/,
-      //   use: [{
-      //     /* inline if smaller than 10 KB, otherwise load as a file */
-      //     loader: 'url-loader',
-      //     options: {
-      //       // outputPath: './assets/images',
-      //       limit: 8000,
-      //       // name: path.join(__dirname, 'assets/images/[name].[hash:7].[ext]'),
-      //       // name: 'images/[hash]-[name].[ext]',
-      //     },
-      //   }],
-      // },
-      // {
-      //   test: /\.(png|svg|jpg|gif)$/,
-      //   loader: 'file-loader',
-      //   options: {
-      //     // name: path.resolve(__dirname, 'assets/images/[name].[hash:7].[ext]'),
-      //     name: '[name].[ext]',
-      //     outputPath: './assets/images',
-      //   },
-      // },
       {
         test: /\.(eot|ttf|woff2?|otf)$/,
         loader: 'file-loader',
@@ -79,6 +57,9 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new ExtractTextPlugin({
