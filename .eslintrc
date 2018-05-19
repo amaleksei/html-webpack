@@ -3,9 +3,11 @@
   "plugins": [
     "react",
     "jsx-a11y",
-    "import"
+    "import",
+    "json",
+    "markdown"
   ],
-  parser: "babel-eslint",
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true
