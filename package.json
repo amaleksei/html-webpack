@@ -6,8 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "webpack": "webpack",
-    "eslint": "eslint",
-    "watch": "webpack --watch"
+    "eslint": "eslint . --ext .js --ext .jsx --ext .json --ext md .",
+    "watch": "webpack --watch",
+    "flow": "flow",
+    "test": "flow && npm run eslint"
   },
   "repository": {
     "type": "git",
