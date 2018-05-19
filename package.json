@@ -8,7 +8,8 @@
     "webpack": "webpack",
     "eslint": "eslint . --ext .js --ext .jsx --ext .json --ext md .",
     "watch": "webpack --watch",
-    "flow": "flow"
+    "flow": "flow",
+    "test": "flow && npm run eslint"
   },
   "repository": {
     "type": "git",
