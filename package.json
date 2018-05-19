@@ -23,9 +23,13 @@
   },
   "homepage": "https://github.com/amaleksei/html-webpack#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "eslint": "^4.19.1",
@@ -33,15 +37,16 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "flow-bin": "^0.72.0",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
   "dependencies": {
-    "babel-preset-react": "^6.24.1",
-    "create-react-class": "^15.6.3",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.1.0",
@@ -54,12 +59,5 @@
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
     "webpack-dev-server": "^3.1.1"
-  },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ],
-    "plugins": []
   }
 }

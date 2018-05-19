@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const createReactClass = require('create-react-class');
-
-const Hello = createReactClass({
+class Hello extends React.Component {
   render() {
     return (
-      <div>
+        <div>
         <div className="hello">
           <span>Hello webpack!</span>
         </div>
@@ -14,15 +12,15 @@ const Hello = createReactClass({
           <span>Boilerplate for a Webpack and React</span>
         </div>
         <div className="image-insert">
-          <img alt="Hard programming" src="./assets/images/test-image.gif" />
+          <img alt="" src="./assets/images/test-image.gif" />
         </div>
       </div>
-    );
-  },
-});
+    )
+  }
+}
 
-const mountNode = document.getElementById('root');
-ReactDOM.render(<Hello />, mountNode);
+
+ReactDOM.render(<Hello />, document.getElementById('root'));
 
 if (module.hot) {
   module.hot.accept();
