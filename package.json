@@ -13,7 +13,10 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "moduleFileExtensions": ["js", "jsx"]
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -44,12 +48,16 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-flowtype": "^2.46.3",
     "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "flow-bin": "^0.72.0",
+    "jest": "^23.1.0",
+    "jest-cli": "^23.1.0",
+    "react-test-renderer": "^16.4.0",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
