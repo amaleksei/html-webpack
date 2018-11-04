@@ -38,7 +38,7 @@
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^3.1.1"
   },
   "dependencies": {
     "css-loader": "^0.28.11",
